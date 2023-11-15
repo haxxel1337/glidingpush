@@ -22,7 +22,7 @@ app.get('/send-notification', async (req, res) => {
     const fileContent = await fs.readFile("rapport_text.txt", "utf8"); // Läs innehållet i filen
 
     await webpush.sendNotification(subscriptionData, JSON.stringify({
-      title: "Gliding Eagle",
+      title: "Träningsrapport",
       body: fileContent // Använd filinnehållet som body
     }));
     res.sendStatus(200);
