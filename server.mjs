@@ -19,7 +19,7 @@ webpush.setVapidDetails(
 app.get('/send-notification', async (req, res) => {
   try {
     await webpush.sendNotification(subscriptionData, JSON.stringify({
-      title: "Gliding Eagle",
+      title: "Träningsrapport",
       body: "Massa text från rapporten, kan va hur långt som helst. Undra hur många tecken som får plats."
     }));
     res.sendStatus(200);
