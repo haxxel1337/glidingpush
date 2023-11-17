@@ -1,13 +1,12 @@
 {
   "name": "glidingpush",
   "version": "1.0.0",
-  "description": "GLiding Push plus SSL",
+  "description": "Gliding Push plus SSL",
   "main": "server.mjs", // eller annan huvudfil beroende på ditt projekt
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
     },
   "repository": {
     "type": "git",
