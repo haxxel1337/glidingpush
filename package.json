@@ -1,5 +1,4 @@
 {
-  "main": "server.mjs", 
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",
