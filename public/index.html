@@ -14,10 +14,10 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Arimo', sans-serif; /* Använd Arimo som font för hela sidan */
+      font-family: 'Arimo', sans-serif;
     }
 
-    #svgContainer, #buttonContainer, #textContainer {
+    #svgContainer, #buttonContainer {
       display: flex;
       justify-content: center;
       max-width: 100%;
@@ -39,10 +39,17 @@
     }
 
     #textContainer {
+      display: flex;
+      justify-content: center;
       max-width: 600px;
       text-align: left;
       margin-top: 20px;
       padding: 0 10px;
+    }
+
+    .text-content {
+      text-align: left;
+      width: 100%;
     }
   </style>
 </head>
@@ -59,14 +66,16 @@
   </div>
 
   <!-- Text Container -->
-  <div id="textContainer"></div>
+  <div id="textContainer">
+    <div class="text-content"><!-- Texten kommer att laddas här --></div>
+  </div>
 
   <script>
     // JavaScript för att läsa in och visa texten från 'rapport_text.txt'
     fetch('../rapport_text.txt')
       .then(response => response.text())
       .then(text => {
-        document.getElementById('textContainer').innerText = text;
+        document.querySelector('.text-content').innerText = text;
       })
       .catch(error => console.error('Error:', error));
   </script>
