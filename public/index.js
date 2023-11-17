@@ -11,7 +11,7 @@ async function run() {
 
   const areNotificationsGranted = window.Notification.permission === "granted";
   if (areNotificationsGranted) {
-    button.innerText = "Skicka Notis";
+    button.innerText = "DONE!";
 
     button.addEventListener("click", async () => {
       await fetch("/send-notification");
