@@ -5,15 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/site.webmanifest">
   <script src="index.js" defer></script>
-  <title>Gliding Push Notiser</title>
+  <title>Gliding Eagle News</title>
+  <style>
+    #svgContainer {
+      display: flex;
+      justify-content: center;
+    }
+
+    #buttonContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Bilden -->
-  <img src="android-chrome-512x512.png" alt="Android Chrome Bild">
+  <!-- SVG Container -->
+  <div id="svgContainer">
+    <object id="svgObject" type="image/svg+xml" data="black_logo_no_text.svg"></object>
+  </div>
 
-  <!-- Knappen -->
-  <button id="subscribe">Ge mig nyheter</button>
+  <!-- Button Container -->
+  <div id="buttonContainer">
+    <button id="subscribe">Ge mig nyheter</button>
+  </div>
 
   <!-- Plats för texten -->
   <div id="textContainer"></div>
