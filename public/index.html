@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,6 +8,26 @@
   <title>iOS Notifications</title>
 </head>
 <body>
+
+  <!-- Bilden -->
+  <img src="android-chrome-512x152.png" alt="Android Chrome Bild">
+
+  <!-- Knappen -->
   <button id="subscribe">Ge mig nyheter</button>
+
+  <!-- Plats för texten -->
+  <div id="textContainer"></div>
+
+  <script>
+    // JavaScript för att läsa in och visa texten från 'rapport_text.txt'
+    // Antagande att 'index.html' ligger under '/public' och 'rapport_text.txt' ligger i roten
+    fetch('../rapport_text.txt')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('textContainer').innerText = text;
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+
 </body>
 </html>
