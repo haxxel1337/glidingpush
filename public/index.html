@@ -7,16 +7,22 @@
   <script src="index.js" defer></script>
   <title>Gliding Eagle News</title>
   <style>
-    #svgContainer {
+    #svgContainer, #textContainer {
       display: flex;
       justify-content: center;
-      max-width: 100%; /* Gör att SVG-containern inte går utanför skärmens bredd */
+      max-width: 100%;
     }
 
     #svgObject {
-      width: 100%; /* SVG:n tar upp hela bredden av dess container */
-      max-width: 600px; /* Maxbredd för SVG:n */
-      height: auto; /* Höjden justeras automatiskt för att behålla aspektförhållandet */
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    #textContainer {
+      max-width: 600px;
+      text-align: center;
+      margin-top: 20px;
     }
 
     #buttonContainer {
@@ -38,12 +44,11 @@
     <button id="subscribe">Ge mig nyheter</button>
   </div>
 
-  <!-- Plats för texten -->
+  <!-- Text Container -->
   <div id="textContainer"></div>
 
   <script>
     // JavaScript för att läsa in och visa texten från 'rapport_text.txt'
-    // Antagande att 'index.html' ligger under '/public' och 'rapport_text.txt' ligger i roten
     fetch('../rapport_text.txt')
       .then(response => response.text())
       .then(text => {
