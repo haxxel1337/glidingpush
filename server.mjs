@@ -19,7 +19,7 @@ webpush.setVapidDetails(
 
 app.get('/send-notification', async (req, res) => {
   try {
-    const fileContent = await fs.readFile("rapport_text.txt", "utf8"); // Läs innehållet i filen
+    const fileContent = await fs.readFile("./public/rapport_text.txt", "utf8"); // Ändra filvägen här
 
     await webpush.sendNotification(subscriptionData, JSON.stringify({
       title: "Träningsrapport",
