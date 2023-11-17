@@ -7,10 +7,20 @@
   <script src="index.js" defer></script>
   <title>Gliding Eagle News</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     #svgContainer, #buttonContainer, #textContainer {
       display: flex;
       justify-content: center;
       max-width: 100%;
+    }
+
+    #svgContainer {
+      margin-top: 10px; /* Lite marginal över SVG */
+      margin-bottom: 10px; /* Lite marginal under SVG */
     }
 
     #svgObject {
@@ -26,7 +36,7 @@
     #textContainer {
       max-width: 600px;
       text-align: center;
-      margin-top: 20px; /* Lägger till mellarum mellan knappen och texten */
+      margin-top: 20px;
     }
   </style>
 </head>
