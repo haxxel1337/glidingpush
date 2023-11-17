@@ -17,7 +17,7 @@
       font-family: 'Arimo', sans-serif;
     }
 
-    #svgContainer, #buttonContainer {
+    #svgContainer, #buttonContainer, #textContainer {
       display: flex;
       justify-content: center;
       max-width: 100%;
@@ -39,13 +39,13 @@
     }
 
     #subscribe {
-      background-color: black; /* Svart bakgrund */
-      color: white; /* Vit text */
-      border: none; /* Inga kanter */
-      padding: 10px 20px; /* Utfyllnad för bättre utseende */
-      text-transform: uppercase; /* Stora bokstäver */
-      cursor: pointer; /* Muspekare ändras till pekare */
-      font-size: 16px; /* Större text */
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 16px;
     }
 
     #textContainer {
@@ -60,6 +60,14 @@
     .text-content {
       text-align: left;
       width: 100%;
+    }
+
+    /* Media query för mobila enheter */
+    @media (max-width: 768px) {
+      #svgContainer {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
     }
   </style>
 </head>
