@@ -1,5 +1,4 @@
 {
-  "description": "Gliding Push plus SSL",
   "main": "server.mjs", 
   "scripts": {
     "start": "node server.mjs",
