@@ -10,6 +10,13 @@
     #svgContainer {
       display: flex;
       justify-content: center;
+      max-width: 100%; /* Gör att SVG-containern inte går utanför skärmens bredd */
+    }
+
+    #svgObject {
+      width: 100%; /* SVG:n tar upp hela bredden av dess container */
+      max-width: 600px; /* Maxbredd för SVG:n */
+      height: auto; /* Höjden justeras automatiskt för att behålla aspektförhållandet */
     }
 
     #buttonContainer {
