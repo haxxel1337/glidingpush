@@ -15,27 +15,18 @@
       margin: 0;
       padding: 0;
       font-family: 'Arimo', sans-serif;
-    }
-
-    #svgContainer, #buttonContainer, #textContainer {
-      display: flex;
-      justify-content: center;
-      max-width: 100%;
+      text-align: center; /* Centrerar innehållet */
     }
 
     #svgContainer {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
 
     #svgObject {
       width: 100%;
       max-width: 600px;
       height: auto;
-    }
-
-    #buttonContainer {
-      margin-top: 20px;
     }
 
     #subscribe {
@@ -46,20 +37,18 @@
       text-transform: uppercase;
       cursor: pointer;
       font-size: 16px;
+      margin-top: 20px;
     }
 
     #textContainer {
-      display: flex;
-      justify-content: center;
       max-width: 600px;
       text-align: left;
-      margin-top: 20px;
+      margin: 20px auto; /* Centrerar containern */
       padding: 0 10px;
     }
 
     .text-content {
       text-align: left;
-      width: 100%;
     }
 
     /* Media query för mobila enheter */
@@ -78,10 +67,8 @@
     <object id="svgObject" type="image/svg+xml" data="black_logo_no_text.svg"></object>
   </div>
 
-  <!-- Button Container -->
-  <div id="buttonContainer">
-    <button id="subscribe">Ge mig nyheter</button>
-  </div>
+  <!-- Button -->
+  <button id="subscribe">Ge mig nyheter</button>
 
   <!-- Text Container -->
   <div id="textContainer">
