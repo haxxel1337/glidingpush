@@ -1,11 +1,18 @@
 {
+  "name": "glidingpush",
+  "version": "1.0.0",
+  "description": "GLiding Push plus SSL",
+  "main": "server.mjs", // eller annan huvudfil beroende på ditt projekt
   "scripts": {
     "start": "node server.mjs",
-    "dev": "node --watch server.mjs"
+    "dev": "node --watch server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "web-push": "^3.5.0"
-  }
+    // Lägg till ytterligare beroenden här om nödvändigt
+  },
+  // Övriga fält som repository, author, etc. från antingen eller båda projekten
 }
