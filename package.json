@@ -1,6 +1,4 @@
 {
-  "name": 'glidingpush',
-  "version": '1.0.0',
   "description": "Gliding Push plus SSL",
   "main": "server.mjs", // eller annan huvudfil beroende på ditt projekt
   "scripts": {
