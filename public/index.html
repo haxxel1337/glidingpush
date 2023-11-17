@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/site.webmanifest">
   <script src="index.js" defer></script>
+
+  <!-- Lägg till Arimo font från Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Gliding Eagle News</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      font-family: 'Arimo', sans-serif; /* Använd Arimo som font för hela sidan */
     }
 
     #svgContainer, #buttonContainer, #textContainer {
@@ -19,8 +24,8 @@
     }
 
     #svgContainer {
-      margin-top: 10px; /* Lite marginal över SVG */
-      margin-bottom: 10px; /* Lite marginal under SVG */
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     #svgObject {
@@ -35,8 +40,9 @@
 
     #textContainer {
       max-width: 600px;
-      text-align: center;
+      text-align: left;
       margin-top: 20px;
+      padding: 0 10px;
     }
   </style>
 </head>
